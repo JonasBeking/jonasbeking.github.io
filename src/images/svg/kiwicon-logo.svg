@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1528.89 652.78">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke-width:45px;}.cls-1,.cls-2{stroke:#000;stroke-miterlimit:10;}.cls-2,.cls-4{fill:#6a703b;}.cls-2{stroke-width:5px;}.cls-3{fill:#bec76b;}
+        </style>
+    </defs>
+    <g id="Ebene_2" data-name="Ebene 2">
+        <rect y="276.51" width="42" height="195"/>
+        <polygon points="150.86 471.51 61.95 370 92.22 343.85 201.13 471.51 150.86 471.51"/>
+        <polygon points="37.47 407.91 17.01 382.36 146.85 276.51 203.85 276.51 37.47 407.91"/>
+    </g>
+    <g id="Ebene_3" data-name="Ebene 3">
+        <rect x="250.39" y="276.51" width="46" height="195"/>
+        <rect x="726.39" y="278.01" width="46" height="195"/>
+    </g>
+    <g id="Ebene_9" data-name="Ebene 9">
+        <rect x="1326.39" y="278.01" width="46" height="195"/>
+        <rect x="1482.89" y="280.01" width="46" height="195"/>
+        <rect x="1580.38" y="400.67" width="46" height="221" transform="translate(2973.92 -287.31) rotate(139.08)"/>
+    </g>
+    <g id="Ebene_4" data-name="Ebene 4">
+        <polygon points="415.44 471.22 350.55 276.51 393.26 276.51 467.15 471.51 415.44 471.22"/>
+        <polygon points="558.44 471.22 493.55 276.51 536.26 276.51 610.15 471.51 558.44 471.22"/>
+        <g id="Ebene_5" data-name="Ebene 5">
+            <polygon points="465.26 471.22 530.15 276.51 487.44 276.51 413.55 471.51 465.26 471.22"/>
+            <polygon points="610.26 471.22 675.15 276.51 632.44 276.51 558.55 471.51 610.26 471.22"/>
+        </g>
+    </g>
+    <g id="Ebene_7" data-name="Ebene 7">
+        <path class="cls-1"
+              d="M1212.31,559.75c-21,20.62-56.59,34.17-96.46,34.17-63.79,0-92.5-42.7-92.5-85.5s45.71-82.5,109.5-82.5c31.89,0,55.27,7.93,74.67,23.2"
+              transform="translate(-175.79 -134.41)"/>
+    </g>
+    <g id="Ebene_6" data-name="Ebene 6">
+        <circle class="cls-2" cx="1177.11" cy="374.01" r="117.5"/>
+    </g>
+    <g id="Ebene_12" data-name="Ebene 12">
+        <ellipse class="cls-3" cx="1177.11" cy="374.01" rx="61.31" ry="60.5"/>
+    </g>
+    <g id="Ebene_13" data-name="Ebene 13">
+        <path d="M1334.09,436c0-2.18,1.18-9.91,3.42-9.91s4.71,7.73,4.71,9.91a4.07,4.07,0,0,1-8.13,0Z"
+              transform="translate(-175.79 -134.41)"/>
+    </g>
+    <g id="Ebene_15" data-name="Ebene 15">
+        <rect x="1174.83" y="166.21" width="52.5" height="52.5"/>
+        <rect x="1287.33" y="68.86" width="38" height="38"/>
+        <rect x="1187.44" y="39.1" width="20.5" height="20.5"/>
+        <rect x="1213.99" y="82.17" width="26.68" height="26.68"/>
+        <rect x="1284.53" y="176.1" width="16.75" height="16.75"/>
+        <rect x="1043.18" y="504.42" width="41.5" height="41.5"/>
+        <rect x="996.82" y="567.82" width="23.5" height="23.5"/>
+        <rect x="1104.57" y="565.82" width="27.5" height="27.5"/>
+        <rect x="1459.38" y="188.62" width="4" height="25.5" transform="translate(109.84 957.92) rotate(-45)"/>
+        <rect x="1428.38" y="157.62" width="4" height="25.5" transform="translate(122.68 926.92) rotate(-45)"/>
+    </g>
+    <g id="Ebene_17" data-name="Ebene 17">
+        <rect x="1271.93" y="601.81" width="4" height="48" transform="translate(639.84 -851.92) rotate(45)"/>
+        <rect x="1206.27" y="669.71" width="4" height="43.5" transform="translate(667.04 -786.26) rotate(45)"/>
+        <rect x="1269.27" y="668.72" width="4" height="43.5" transform="translate(-291.69 966.75) rotate(-45)"/>
+        <rect x="1159.81" y="668.72" width="4" height="43.5" transform="translate(-323.75 889.35) rotate(-45)"/>
+        <rect x="1163.27" y="711.68" width="4" height="43.5" transform="translate(684.12 -743.56) rotate(45)"/>
+        <rect x="1326.18" y="339.2" width="4" height="74" transform="translate(479.24 -963.39) rotate(45)"/>
+        <rect x="1406.52" y="274.11" width="4" height="43.5" transform="translate(445.96 -1043.73) rotate(45)"/>
+        <rect x="1448.63" y="232.01" width="4" height="43.5" transform="translate(428.52 -1085.83) rotate(45)"/>
+        <rect x="1447.68" y="278.11" width="4" height="43.5" transform="translate(36.77 978.5) rotate(-45)"/>
+        <rect x="1425.23" y="183.72" width="4" height="43.5" transform="translate(387.52 -1083.43) rotate(45)"/>
+        <rect x="1385.98" y="148.62" width="4" height="43.5" transform="translate(351.21 -1065.96) rotate(45)"/>
+    </g>
+    <g id="Ebene_16" data-name="Ebene 16">
+        <rect class="cls-4" x="1259.71" y="40.6" width="21" height="22"/>
+        <rect class="cls-4" x="1240.45" y="131.76" width="21.97" height="21.97"/>
+        <rect class="cls-4" x="935.73" y="611.78" width="41" height="41"/>
+        <rect class="cls-3" x="924.56" y="495.62" width="48" height="46"/>
+        <rect class="cls-3" x="1218.62" width="30.25" height="30.25"/>
+    </g>
+</svg>

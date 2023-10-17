@@ -1,0 +1,46 @@
+$palettes: (
+        green: (
+                darker: hsl(89, 38%, 23%),
+                dark: hsl(90, 38%, 28%),
+                base: hsl(65, 31%, 42%),
+                light: hsl(66, 44%, 59%),
+                lighter: hsl(66, 44%, 69%),
+        ),
+        black: (
+                dark: hsl(0, 0%, 0%),
+                base: hsl(0, 0%, 13%),
+                light: hsl(0, 0%, 20%),
+                lighter: hsl(0, 0%, 50%),
+        ),
+        white: (
+                dark: #D4D4D4,
+                base: hsl(0, 0%, 98%),
+                light: hsl(0, 0%, 100%)
+        )
+);
+
+@function palette-color($color,$tone : base) {
+
+
+  @if map-has-key($palettes, $color) {
+    $color: map-get($palettes, $color);
+
+    @if map-has-key($color, $tone) {
+      $tone: map-get($color, $tone);
+      @return $tone;
+    }
+
+    @warn "unknown tone `#{$tone}` in color";
+    @return null;
+  }
+
+  @warn "unknown color `#{$color}` in palette";
+  @return null;
+
+}
+
+$text-color: palette-color(black);
+$background-color: palette-color(white);
+
+
+

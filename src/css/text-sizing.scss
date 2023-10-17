@@ -1,0 +1,76 @@
+
+body{
+  font-size: calc(15px + 0.390625vw);
+}
+
+*{
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-weight: normal;
+
+}
+
+h2{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.6;
+
+}
+
+div{
+  font-size: 1rem;
+}
+
+h3{
+  font-size: 1.5rem;
+  line-height: 1.6;
+
+
+  @media (max-width: 1000px) and (orientation: portrait) {
+    font-size: 45px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+p, span {
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: lighter;
+
+  @media (max-width: 1000px) and (orientation: portrait) {
+    font-size: 1.6rem;
+  }
+
+}
+
+strong{
+  line-height: 1.6;
+  font-size: 1rem;
+  color: palette-color(green);
+
+
+}
+
+ul{
+  list-style: none;
+}
+
+ol{
+  padding-left: 20px;
+
+}
+
+li{
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 20px 0;
+
+  @media (max-width: 1000px) and (orientation: portrait) {
+    font-size: 1.6rem;
+  }
+
+
+}
+

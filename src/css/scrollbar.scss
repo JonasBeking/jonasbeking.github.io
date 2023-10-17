@@ -1,0 +1,22 @@
+@import "colorpalette";
+
+::-webkit-scrollbar {
+  position: absolute;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: palette-color(white,dark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: palette-color(green,light);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

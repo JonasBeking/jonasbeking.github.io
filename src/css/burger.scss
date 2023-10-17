@@ -1,0 +1,42 @@
+@import "colorpalette";
+
+.burger{
+
+  height: 60%;
+  aspect-ratio: 1/1;
+  margin-right: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .burger-line{
+    background: palette-color(black);
+    height: 5%;
+    border-radius: 10px;
+  }
+
+  &.open{
+
+    justify-content: center;
+
+    .burger-line {
+      background: none;
+      margin: -2.5%;
+    }
+
+    .burger-line:first-child{
+      background: palette-color(black);
+      width: auto;
+      display: block;
+      transform: rotate(45deg);
+    }
+
+    .burger-line:last-child{
+      background: palette-color(black);
+      width: auto;
+      display: block;
+      transform: rotate(-45deg);
+    }
+  }
+}

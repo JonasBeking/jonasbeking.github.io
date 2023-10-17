@@ -1,0 +1,118 @@
+@import "colorpalette";
+
+
+#project-title-container{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: stretch;
+  padding-right: 30px;
+  border-right: solid 2px palette-color(green,light);
+
+  .project-title{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 5px;
+
+    &.selected{
+      color: palette-color(green,light);
+    }
+
+
+    &:hover{
+      background: palette-color(white,dark);
+    }
+
+
+  }
+
+  @media (max-width: 1000px) and (orientation: portrait) {
+    .project-title{
+      justify-content: center;
+    }
+    border-right: none;
+    border-bottom: solid 2px palette-color(green,light);
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+}
+
+#project-content-container{
+  flex-direction: column;
+  display: flex;
+  flex: 5;
+  transition: all 0.5s;
+  padding-left: 30px;
+
+  .project-container{
+    max-height: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    transition: all 0.5s;
+    opacity: 0;
+
+    &.expanded{
+      opacity: 1;
+      max-height: 400vh;
+    }
+
+    .project-description{
+      transition: all 0.5s;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .project-technical-details{
+      display: flex;
+      overflow: hidden;
+      transition: all 0.5s;
+
+
+
+      .technical-details-tab{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        margin-right: 30px;
+
+        h4{
+          font-size: 20px;
+          color: palette-color(green, light);
+          margin-bottom: 5px;
+        }
+
+        li{
+          &::before{
+            content: "-";
+          }
+        }
+      }
+
+      @media (max-width: 1000px) and (orientation: portrait) {
+        flex-direction: row;
+
+        .technical-details-tab{
+          margin-right: unset;
+          margin-bottom: 30px;
+          padding-left: 10px;
+
+          h4 {
+            font-size: 40px;
+          }
+
+
+
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) and (orientation: portrait) {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+}
+

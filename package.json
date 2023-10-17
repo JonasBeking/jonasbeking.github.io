@@ -1,0 +1,36 @@
+{
+  "name": "kiwi-con",
+  "version": "1.0.0",
+  "description": "www.kiwi-con.de",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite build --watch",
+    "serve": "vite",
+    "build": "vite build",
+    "serve-open": "vite --host 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivtm86/kiwi-con.git"
+  },
+  "keywords": [
+    "kiwicon",
+    "TypeScript",
+    "JavaScript",
+    "SASS",
+    "HTML"
+  ],
+  "author": "Eduard Beking",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivtm86/kiwi-con/issues"
+  },
+  "homepage": "https://github.com/ivtm86/kiwi-con#readme",
+  "dependencies": {
+    "vite": "^4.2.1",
+    "vite-plugin-static-copy": "^0.17.0"
+  },
+  "devDependencies": {
+    "sass": "^1.62.0"
+  }
+}
