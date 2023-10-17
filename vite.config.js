@@ -8,7 +8,7 @@ console.log(path.resolve(__dirname, './src/script-editor'))
 export default {
     root: './src',
     build: {
-        outDir: '../dest',
+        outDir: '../dist',
         minify: false,
         emptyOutDir: true,
         rollupOptions: {
