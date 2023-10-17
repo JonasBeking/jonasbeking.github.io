@@ -4,24 +4,6 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
-
-inputs:
-  name:
-    description: 'Artifact name'
-    required: false
-    default: 'github-pages'
-  path:
-    description: "Path of the directory containing the static assets."
-    required: true
-    default: "dest/"
-  retention-days:
-    description: "Duration after which artifact will expire in days."
-    required: false
-    default: "1"
-
-
-
 jobs:
   deploy:
     runs-on: ubuntu-20.04
