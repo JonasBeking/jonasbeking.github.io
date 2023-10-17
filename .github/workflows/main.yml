@@ -4,6 +4,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+
 jobs:
   deploy:
     runs-on: ubuntu-20.04
@@ -11,7 +12,7 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v2
-        -
+
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
@@ -25,7 +26,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - run: |
-          sed -i '51\   "homepage": "/pages-demo-react",' ./package.json
+          sed -i '5i\   "homepage": "/pages-demo-react",' ./package.json
       - run: npm ci
       - run: npm run build
       - run: cp dest/index.html dest/404.html
