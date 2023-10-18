@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>KiwiCon</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <link href="css/reduced-style.scss" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-57e359be.ico" />
+    
+  <script type="module" crossorigin src="/assets/app-dfdb8254.js"></script>
+  <link rel="stylesheet" href="/assets/app-0f124322.css">
 </head>
 <body>
 <nav id="top-bar">
     <div class="main-navigation-container">
         <div class="logo">
-            <img alt="Kiwicon-logo" src="images/svg/kiwicon-logo.svg">
+            <img alt="Kiwicon-logo" src="/assets/kiwicon-logo-2006409f.svg">
         </div>
         <ul class="menu" id="navigation-menu">
             <li class="nav-item"><a href="index.html#home">Start</a></li>
@@ -55,19 +57,18 @@
                     <div class="contact-header">
                         <h3>Wir helfen Ihnen gerne</h3>
                     </div>
-                    <form class="contact-input-fields" action="https://formsubmit.co/4b28be05a0b4b114987872dc9da8413a" method="POST">
-                        <input type="text" name="name" placeholder="Voller Name*" required>
-                        <input type="hidden" name="_next" value="https://kiwi-con.de">
-                        <input type="email" name="email" placeholder="Email Adresse*" required>
-                        <input value="New Request from Kiwi-Con.de" type="hidden" name="_subject" required>
-                        <label for="message">Erzählen Sie uns mehr über Ihr Projekt</label>
-                        <input type="text" name="message" id="message" required>
-                        <input type="submit">
+                    <form class="contact-input-fields" onsubmit="sendEmail()">
+                        <input id="name-input" placeholder="Voller Name*" type="text">
+                        <input id="mail-input" placeholder="Email Adresse*" type="email">
+                        <input id="subject-input" placeholder="Betreff*" type="text">
+                        <label for="text-input">Erzählen Sie uns mehr über Ihr Projekt*</label>
+                        <input id="text-input" type="text">
+                        <input id="submit-button" type="submit">
                     </form>
                 </div>
             </div>
             <div class="flex-image">
-                <img alt="remotework" src="./images/svg/woman-at-desk-front.svg">
+                <img alt="remotework" src="/assets/woman-at-desk-front-e2d1ea25.svg">
             </div>
         </div>
     </div>
@@ -86,9 +87,22 @@
         </p>
     </div>
 </footer>
-<script src="js/app.js" type="module"></script>
-<script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
+<script>
+    function sendEmail() {
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "bekingjonas@gmail.com",
+            Password : "Gjunjor79",
+            To : 'gjunjor@gmail.com',
+            From : "sickboymusicbusiness@gmail.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+                message => alert(message)
+        );
+    }
 
 </script>
 </body>

@@ -1,0 +1,1092 @@
+{
+    "basic":{
+        "baseurl": "https://kiwi-con.de/script-editor"
+    },
+    "controls": [
+        { "name": "empty control",
+            "elements": [],
+            "methods": []
+        },
+        { "name": "checkbox",
+            "elements": [],
+            "methods": [
+                {"name": "isChecked",
+                    "arguments": []
+                }
+            ]
+        },
+        { "name": "listbox",
+            "elements": [ ],
+            "methods": [
+                {
+                    "name": "getListOfItems",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "getCurrentSelection",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "select",
+                    "arguments": [
+                        {
+                            "name": "val",
+                            "type": "String"
+                        }
+                    ]
+                }
+            ]
+        },
+        { "name": "button",
+            "elements": [ ],
+            "methods": [
+                {
+                    "name": "click",
+                    "arguments": []
+                },
+                {
+                    "name": "isDisabled",
+                    "arguments": []
+                }
+            ]
+        },
+        { "name": "link",
+            "elements": [ ],
+            "methods": [
+                {
+                    "name": "click",
+                    "arguments": []
+                },
+                {
+                    "name": "isDisabled",
+                    "arguments": []
+                }
+            ]
+        },
+        {"name": "radiogroup",
+            "elements": [
+                {
+                    "name": "rgroupname",
+                    "type": "String"
+                }
+            ],
+            "methods": [
+                {
+                    "name": "select",
+                    "arguments": [
+                        {
+                            "name": "labeltext",
+                            "type": "String"
+                        }
+                    ]
+                },
+                {
+                    "name": "getSelected",
+                    "arguments": [
+                        
+                    ]
+                }
+            ]
+        },
+        {"name": "label",
+            "elements": [
+                
+            ],
+            "methods": [
+                {
+                    "name": "get",
+                    "arguments": [
+                        
+                    ]
+                }
+            ]
+        },
+        {"name": "textbox",
+            "elements": [
+                
+            ],
+            "methods": [
+                {
+                    "name": "set",
+                    "arguments": [
+                        {
+                            "name": "val",
+                            "type": "String"
+                        }
+                    ]
+                },
+                {
+                    "name": "get",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "clear",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "isDisabled",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "isFocused",
+                    "arguments": [
+                        
+                    ]
+                }
+            ]
+        },
+        {"name": "textarea",
+            "elements": [
+                
+            ],
+            "methods": [
+                {
+                    "name": "set",
+                    "arguments": [
+                        {
+                            "name": "val",
+                            "type": "String"
+                        }
+                    ]
+                },
+                {
+                    "name": "get",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "clear",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "isDisabled",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "isFocused",
+                    "arguments": [
+                        
+                    ]
+                }
+            ]
+        },
+        {"name": "date",
+            "elements": [],
+            "methods": [
+                {
+                    "name": "set",
+                    "arguments": [
+                        {
+                            "name": "val",
+                            "type": "String"
+                        }
+                    ]
+                },
+                {
+                    "name": "get",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "clear",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "isDisabled",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "isFocused",
+                    "arguments": [
+                        
+                    ]
+                }
+            ]
+        },
+        {"name": "table",
+            "elements": [
+                {
+                    "name": "ColumnList",
+                    "type": "ArrayList"
+                }
+            ],
+            "methods": [
+                {
+                    "name": "getRowWithCellText",
+                    "arguments": [
+                        {
+                            "name": "columnname",
+                            "type": "String"
+                        },
+                        {
+                            "name": "text",
+                            "type": "String"
+                        }
+                    ]
+                },
+                {
+                    "name": "getColumnIndex",
+                    "arguments": [
+                        {
+                            "name": "colname",
+                            "type": "String"
+                        }
+                    ]
+                },
+                {
+                    "name": "getCellData",
+                    "arguments": [
+                        {
+                            "name": "rownr",
+                            "type": "Int"
+                        },
+                        {
+                            "name": "colnr",
+                            "type": "Int"
+                        }
+                    ]
+                },
+                {
+                    "name": "columnCount",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "rowCount",
+                    "arguments": [
+                        
+                    ]
+                },
+                {
+                    "name": "childItem",
+                    "arguments": [
+                        {
+                            "name": "rownr",
+                            "type": "Int"
+                        },
+                        {
+                            "name": "columnname",
+                            "type": "String"
+                        },
+                        {
+                            "name": "type",
+                            "type": "String"
+                        },
+                        {
+                            "name": "idx",
+                            "type": "Int"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "pages": [
+        {"name": "Startseite",
+            "elements": [
+                {
+                    "name": "Menu",
+                    "type": "MainMenu"
+                },
+                {
+                    "name": "Titel",
+                    "type": "label"
+                },
+                {
+                    "name": "Login",
+                    "type": "link"
+                },
+                {
+                    "name": "Logout",
+                    "type": "link"
+                },
+                {
+                    "name": "ErrorMessage",
+                    "type": "label"
+                },
+                {
+                    "name": "InfoMessage",
+                    "type": "label"
+                },
+                {
+                    "name": "Suche",
+                    "type": "SucheForm"
+                },
+                {
+                    "name": "Ergebnis",
+                    "type": "table"
+                }
+            ],
+            "methods": [],
+            "fields": {
+                "url": "/kiwi-shop/1.0/pages/startpage.xhtml",
+                "at": "Titel=='Suche'"
+            },
+            "help":["<h2>Startseite</h2>","<ul>","<li>Elemente","<ul>","<li><em>Menu: MainMenu</em></li>","<li><em>Titel: label</em></li>","<li><em>Logout: link</em></li>","<li><em>ErrorMessage: label</em> - Beim einträten eines fehlers wird die Nachricht unter dem Titel angezeigt und wird wieder entfernt wenn der Fehler behoben ist</li>","<li><em>InfoMessage: label</em> - wird unterhalb von Titel angezeigt.</li>","<li><em>Suche: SucheForm</em> - Ein Formular mit Feldern als Such Parameter</li>","<li><em>Ergebnis: table</em></li>","</ul>","</li>","<li>Methoden</li>","</ul>"]
+        },
+        {"name": "Login",
+            "elements": [
+                { "name": "Titel",
+                    "type": "label"
+                },
+                { "name": "_form",
+                    "type": "webelement"
+                },
+                { "name": "_username",
+                    "type": "textbox"
+                },
+                { "name": "_password",
+                    "type": "textbox"
+                },
+                {  "name": "_rememberme",
+                    "type": "checkbox"
+                },
+                {  "name": "_login",
+                    "type": "button"
+                },
+                {  "name": "Passwortvergessen",
+                    "type": "link"
+                },
+                { "name": "Registrieren",
+                    "type": "link"
+                },
+                { "name": "Message",
+                    "type": "label"
+                },
+                { "name": "facebook",
+                    "type": "button"
+                },
+                { "name": "google",
+                    "type": "button"
+                },
+                {"name": "Speichern",
+                    "type": "button"
+                }
+               
+            ],
+            "methods": [
+                {"name": "Login",
+                    "arguments": [
+                        {
+                            "name": "username",
+                            "type": "string"
+                        },
+                        {
+                            "name": "password",
+                            "type": "string"
+                        },
+                        {
+                            "name": "rememberme",
+                            "type": "boolean"
+                        }
+                    ] 
+                }
+            ],
+            "fields": {
+                "url": "/kiwi-shop/1.0/pages/login.xhtml",
+                "at": "Titel==~.*anlegen"
+            }
+        },
+        {"name": "Detailansicht",
+            "elements": [
+                {
+                    "name": "_form",
+                    "type": "webelement"
+                },
+                {
+                    "name": "Titel",
+                    "type": "label"
+                },
+                {
+                    "name": "_tableiste",
+                    "type": "webelement"
+                },
+                {
+                    "name": "ErrorMessage",
+                    "type": "label"
+                },
+                {
+                    "name": "InfoMessage",
+                    "type": "label"
+                },
+                {
+                    "name": "Bestellungen",
+                    "type": "table"
+                },
+                {
+                    "name": "Aendern",
+                    "type": "button"
+                },
+                {
+                    "name": "Zurueck",
+                    "type": "button"
+                },
+                {
+                    "name": "Popup",
+                    "type": "webelement"
+                }
+            ],
+            "methods": [
+                {
+                    "name":"SelectTab",
+                    "arguments":[
+                        {
+                            "name":"tabname",
+                            "type":"string"
+                        }
+                    ]
+                }
+                
+            ],
+            "fields": {
+                "url": "/kiwi-shop/1.0/pages/detailansicht.xhtml",
+                "at": "Titel==~/Detailansicht.*/"
+            },
+            "help":["<h2>Detailansicht</h2>","<ul>","<li>Elemente","<ul>","<li><em>_form: webelement</em> - Internes(private) element. Sollte im Script nicht verwendet werden.</li>","<li><em>Titel: label</em></li>","<li><em>_tableiste: webelement</em> - Internes(private) element. Verwendung in der function SelectTag(tabname)</li>","<li><em>ErrorMessage: label</em> - Beim einträten eines fehlers wird die Nachricht unter dem Titel angezeigt und wird wieder entfernt wenn der Fehler behoben ist</li>","<li><em>InfoMessage: label</em> - wird unterhalb von Titel angezeigt.</li>","<li><em>Bestellungen: table</em></li>","<li><em>Aendern: button</em></li>","<li><em>Zurueck: button</em></li>","<li><em>Popup: webelement</em></li>","</ul>","</li>","<li>Methoden","<ul>","<li><strong>SelectTab(tabname :string) :void</strong> - Selektiert den vorgegebenen Tab</li>","</ul>","</li>","</ul>","<pre><code class=\"language-groovy\">//Beispiele","assert Title=='Kunden Detailansicht: $kundenname'","SelectTab('Rechnungsdaten')","def anzahlderbestellungen = Bestellungen.rowCount()","Zurueck.click()","</code></pre>"]
+        },
+        {"name": "ProduktAenderung",
+            "elements": [
+                {
+                    "name": "_form",
+                    "type": "webelement"
+                },
+                {
+                    "name": "Titel",
+                    "type": "webelement"
+                },
+                {
+                    "name": "ProduktInfo",
+                    "type": "webelement"
+                },
+                {
+                    "name": "ErrorMessage",
+                    "type": "webelement"
+                },
+                {
+                    "name": "InfoMessage",
+                    "type": "webelement"
+                },
+                {
+                    "name": "Begruendung",
+                    "type": "webelement"
+                },
+                {
+                    "name": "Daten",
+                    "type": "table"
+                },
+                {
+                    "name": "Speichern",
+                    "type": "button"
+                },
+                {
+                    "name": "Abbrechen",
+                    "type": "button"
+                },
+                {
+                    "name": "Popup",
+                    "type": "webelement"
+                }
+            ],
+            "methods": [
+                
+            ],
+            "fields": {
+                "url": "/kiwi-shop/1.0/pages/produkt_aenderung.xhtml",
+                "at": "Titel==~/.*nderung/"
+            }
+        },
+        {"name": "AenderungLagerdaten",
+            "elements": [
+                { "name": "_form",
+                    "type": "webelement"
+                },
+                { "name": "Historie",
+                    "type": "table"
+                },
+                {"name": "LagerNr",
+                    "type": "label"
+                },
+                { "name": "Lagerbeschreibung",
+                    "type": "label"
+                },
+                { "name": "Artikelgruppe",
+                    "type": "Combobox"
+                },
+                { "name": "ArtikelNr",
+                    "type": "textbox"
+                },
+                { "name": "Artikelbezeichnung1",
+                    "type": "label"
+                },
+                { "name": "Artikelbezeichnung2",
+                    "type": "label"
+                },
+                { "name": "Artikelbeschreibung",
+                    "type": "textarea"
+                },
+                {  "name": "Sollbestand",
+                    "type": "textbox"
+                },
+                { "name": "Mindestbestand",
+                    "type": "label"
+                },
+                {  "name": "Reservemenge",
+                    "type": "label"
+                },
+                {"name": "Lagermenge",
+                    "type": "textbox"
+                },
+                {"name": "Info",
+                    "type": "textbox"
+                },
+                {"name": "MengenEinheit",
+                    "type": "label"
+                },
+                {"name": "Fixer Lagerplatz",
+                    "type": "textbox"
+                },
+                {"name": "Zurueck",
+                    "type": "button"
+                },
+                {"name": "Weiter",
+                    "type": "button"
+                },
+                {"name": "Abbrechen",
+                    "type": "button"
+                },
+                {"name": "Speichern",
+                    "type": "button"
+                }
+            ],
+            "methods": [
+                
+            ],
+            "fields": {
+                "url": "/kiwi-shop/1.0/pages/aenderung_lagerbestand.xhtml",
+                "at": "title.contains(Lager)"
+            }
+        },
+        {"name": "AenderungStammdaten",
+            "elements": [
+                { "name": "_form",
+                    "type": "webelement"
+                },
+                { "name": "_table",
+                    "type": "webelement"
+                },
+                { "name": "Kundennummer",
+                    "type": "label"
+                },
+                { "name": "Firmenname",
+                    "type": "textbox"
+                },
+                { "name": "Strasse",
+                    "type": "textbox"
+                },
+                { "name": "PLZ",
+                    "type": "textbox"
+                },
+                { "name": "Ort",
+                    "type": "textbox"
+                },
+                { "name": "Land",
+                    "type": "textbox"
+                },
+                { "name": "Telefon",
+                    "type": "textbox"
+                },
+                { "name": "Email",
+                    "type": "listbox"
+                },
+                { "name": "Internet",
+                    "type": "textbox"
+                },
+                { "name": "Absenderzeile",
+                    "type": "textbox"
+                },
+                { "name": "Abbrechen",
+                    "type": "button"
+                },
+                { "name": "Speichern",
+                    "type": "button"
+                },
+                { "name": "Popup",
+                    "type": "KiwiPopup"
+                }
+            ],
+            "methods": [],
+            "fields": {
+                "url": "/kiwi-shop/1.0/pages/aenderung_stammdaten.xhtml",
+                "at": "title.contains('Stamm')"
+            }
+        },
+        {"name": "KampagneAnlegen",
+            "elements": [
+                { "name": "Menu",
+                    "type": "webelement"
+                },
+                { "name": "_form",
+                    "type": "webelement"
+                },
+                { "name": "Titel",
+                    "type": "textbox"
+                },
+                { "name": "Status",
+                    "type": "listbox"
+                },
+                {  "name": "Typ",
+                    "type": "listbox"
+                },
+                {  "name": "Beschreibung",
+                    "type": "textarea"
+                },
+                {  "name": "ZugewiesenAn",
+                    "type": "listbox"
+                },
+                { "name": "Teams",
+                    "type": "listbox"
+                },
+                { "name": "Budget",
+                    "type": "textbox"
+                },
+                { "name": "Startdatum",
+                    "type": "date"
+                },
+                { "name": "Enddatum",
+                    "type": "date"
+                },
+                {"name": "Speichern",
+                    "type": "button"
+                },
+                {"name": "Abbrechen",
+                    "type": "button"
+                }
+            ],
+            "methods": [],
+            "fields": {
+                "url": "/kiwi-shop/1.0/pages/kampagne_anlegen.xhtml",
+                "at": "Titel==~.*anlegen"
+            }
+        }
+    ],
+    "modules": [
+        {"name": "KiwiPopup",
+            "elements": [
+                { "name": "Titel",
+                    "type": "label"
+                },
+                {"name": "Text",
+                    "type": "label"
+                },
+                { "name": "Abschliessen",
+                    "type": "button"
+                },
+                { "name": "Abbrechen",
+                    "type": "button"
+                },
+                { "name": "Ja",
+                    "type": "button"
+                },
+                { "name": "Nein",
+                    "type": "button"
+                },
+                { "name": "Zurueckkehren",
+                    "type": "button"
+                }
+            ],
+            "methods": []   
+        },
+        {"name": "SperrePopup",
+            "elements": [
+                { "name": "Text",
+                    "type": "label"
+                },
+                { "name": "Ja",
+                    "type": "button"
+                },
+                { "name": "Nein",
+                    "type": "button"
+                }
+            ],
+            "methods": [ ]
+        },
+        { "name": "Postausdruck",
+            "elements": [
+                {"name": "_form",
+                    "type": "webelement"
+                },
+                { "name": "Firmenname",
+                    "type": "label"
+                },
+                { "name": "Branche",
+                    "type": "label"
+                },
+                { "name": "Bundesland",
+                    "type": "label"
+                },
+                { "name": "Land",
+                    "type": "webelement"
+                },
+                { "name": "Ansprechpartner",
+                    "type": "label"
+                },
+                { "name": "Drucken",
+                    "type": "button"
+                },
+                { "name": "Abbrechen",
+                    "type": "button"
+                }
+            ],
+            "methods": []
+        },
+        { "name": "Filterbereich",
+            "elements": [
+                { "name": "_header",
+                    "type": "webelement"
+                },
+                {  "name": "BearbeitetVon",
+                    "type": "textbox"
+                },
+                { "name": "BearbeitetBis",
+                    "type": "textbox"
+                },
+                { "name": "Nachname",
+                    "type": "textbox"
+                },
+                { "name": "Vorname",
+                    "type": "textbox"
+                },
+                { "name": "Vorgangsart",
+                    "type": "listbox"
+                },
+                { "name": "Filtern",
+                    "type": "button"
+                },
+                { "name": "Zuruecksetzen",
+                    "type": "button"
+                }
+            ],
+            "methods": [
+                {
+                    "name": "ExpandFilter",
+                    "arguments": []
+                }
+            ]
+        },
+        {"name": "Mitteilungen",
+            "elements": [
+                { "name": "_form",
+                    "type": "webelement"
+                },
+                { "name": "table",
+                    "type": "table"
+                }
+            ],
+            "methods": []
+        },
+        { "name": "Zustaendigkeit",
+            "elements": [
+                {
+                    "name": "_form",
+                    "type": "webelement"
+                },
+                {
+                    "name": "Rechtsnachfolger",
+                    "type": "listbox"
+                },
+                {
+                    "name": "Abteilung",
+                    "type": "listbox"
+                },
+                {
+                    "name": "AbtSchluessel",
+                    "type": "label"
+                },
+                {
+                    "name": "Sachbearbeiter",
+                    "type": "textbox"
+                }
+            ],
+            "methods": []
+        },
+        {"name": "MainMenu",
+            "elements": [
+                { "name": "_mnuKunden",
+                    "type": "link"
+                },
+                {"name": "_mnuBestellungen",
+                    "type": "link"
+                },
+                { "name": "_mnuBestellungenOffen",
+                    "type": "link"
+                },
+                { "name": "_mnuBestellungenGeschlossen",
+                    "type": "link"
+                },
+                { "name": "_mnuBestellungenStorniert",
+                    "type": "link"
+                },
+                { "name": "_mnuFreigaben",
+                    "type": "link"
+                },
+                { "name": "_mnuFreigabenNeuanlage",
+                    "type": "link"
+                },
+                {"name": "_mnuFreigabenAenderung",
+                    "type": "link"
+                },
+                { "name": "_mnuFreigabenLoeschung",
+                    "type": "link"
+                },
+                { "name": "_mnuZurueckweisungen",
+                    "type": "link"
+                },
+                { "name": "_mnuZurueckweisungNeuanlage",
+                    "type": "link"
+                },
+                { "name": "_mnuZurueckweisungAenderung",
+                    "type": "link"
+                },
+                {"name": "_mnuZurueckweisungLoeschung",
+                    "type": "link"
+                },
+                { "name": "_mnuStatistik",
+                    "type": "link"
+                }
+            ],
+            "methods": [
+                {"name": "Open",
+                    "arguments": [
+                        {
+                            "name": "menuname",
+                            "type": "String"
+                        }
+                    ]
+                },
+                {"name": "expandMenuAllgemein",
+                    "arguments": []
+                },
+                {"name": "expandMenuPostfach",
+                    "arguments": []
+                },
+                {"name": "expandMenuZurueckweisungen",
+                    "arguments": [ ]
+                },
+                {"name": "expandMenuFreigaben",
+                    "arguments": [ ]
+                }
+            ],
+            "help":["<h2>MainMenu</h2>","<p>Das MainMenu wird auf jeder Seite auf der linken Seite angezeigt.</p>","<ul>","<li>","<p>Elemente</p>","<ul>","<li><em>_mnuKunden :link</em></li>","<li><em>_mnuBestellungen :link</em></li>","<li><em>_mnuBestellungenOffen :link</em></li>","<li><em>_mnuBestellungenGeschlossen :link</em></li>","<li><em>_mnuBestellungenStorniert :link</em></li>","<li><em>...</em></li>","</ul>","</li>","<li>","<p>Methoden</p>","<ul>","<li><em>Open(menuname :sting) :void</em> - Auf das vorgegebene Eintrag in dem Menu wird geclickt. Menulevel werden durch ein Punkt gekennzeichnet. siehe Beispiel.</li>","<li><em>expandMenuBestellungen(): void</em></li>","<li><em>...</em></li>","</ul>","</li>","</ul>","<pre><code class=\"language-groovy\">//Beispiel: \n 'Menu' ist die Element Bezeichnung aus dem Page Object. \n","Menu.Open('Bestellungen.BestellungenOffen') \n","</code></pre>"]
+        },
+        { "name": "MitarbeiterStammdaten",
+            "elements": [
+                { "name": "_form",
+                    "type": "webelement"
+                },
+                { "name": "Familienname",
+                    "type": "textbox"
+                },
+                { "name": "Vorname",
+                    "type": "textbox"
+                },
+                { "name": "GeburtsOrt",
+                    "type": "textbox"
+                },
+                { "name": "Ehename",
+                    "type": "textbox"
+                },
+                { "name": "Geburtsstaat",
+                    "type": "textbox"
+                },
+                { "name": "Geburtsname",
+                    "type": "textbox"
+                },
+                { "name": "Geschlecht",
+                    "type": "listbox"
+                },
+                {"name": "Abteilung",
+                    "type": "listbox"
+                },
+                {"name": "Rolle",
+                    "type": "listbox"
+                },
+                {"name": "Beginndatum",
+                    "type": "date"
+                }
+            ],
+            "methods": []
+        },
+        { "name": "Statistikfilter",
+            "elements": [
+                { "name": "Von",
+                    "type": "textbox"
+                },
+                { "name": "Bis",
+                    "type": "textbox"
+                },
+                { "name": "Modus",
+                    "type": "Combobox"
+                },
+                {  "name": " Auftragsart",
+                    "type": "Combobox"
+                },
+                {  "name": "Gruppe",
+                    "type": "Combobox"
+                },
+                {  "name": "Team",
+                    "type": "Combobox"
+                },
+                {  "name": "AlleAuftragsarten",
+                    "type": "checkbox"
+                },
+                { "name": "AuswertungNachBundesland",
+                    "type": "checkbox"
+                },
+                { "name": "AlleBranchen",
+                    "type": "checkbox"
+                },
+                { "name": "GesamtStatistik",
+                    "type": "checkbox"
+                }
+            ],
+            "methods": [ ]
+        },
+        { "name": "SucheForm",
+            "elements": [
+                { "name": "_form",
+                    "type": "webelement"
+                },
+                { "name": "Nummer",
+                    "type": "textbox"
+                },
+                { "name": "Nachname",
+                    "type": "textbox"
+                },
+                { "name": "Vorname",
+                    "type": "textbox"
+                },
+                { "name": "Geburtstag",
+                    "type": "textbox"
+                },
+                {  "name": "PLZ",
+                    "type": "textbox"
+                },
+                { "name": "Strasse",
+                    "type": "textbox"
+                },
+                { "name": "Abteilung",
+                    "type": "Combobox"
+                },
+                { "name": "Geloescht",
+                    "type": "checkbox"
+                },
+                { "name": "Geburtsort",
+                    "type": "textbox"
+                },
+                { "name": "Wohnort",
+                    "type": "textbox"
+                },
+                { "name": "Hausnummer",
+                    "type": "textbox"
+                },
+                { "name": "Geschlecht",
+                    "type": "Combobox"
+                },
+                { "name": "Suchen",
+                    "type": "webelement"
+                },
+                { "name": "FelderLeeren",
+                    "type": "webelement"
+                }
+            ],
+            "methods": [ ]
+        },
+        { "name": "TabDruckdaten",
+            "elements": [
+                { "name": "_form",
+                    "type": "webelement"
+                },
+                { "name": "table",
+                    "type": "table"
+                }
+            ],
+            "methods": [ ]
+        },
+        { "name": "TabHistorie",
+            "elements": [
+                { "name": "KundenInfo",
+                    "type": "label"
+                },
+                { "name": "_form",
+                    "type": "webelement"
+                },
+                { "name": "table",
+                    "type": "table"
+                }
+            ],
+            "methods": []
+        },
+        {"name": "WeitereDaten",
+            "elements": [
+                { "name": "_form",
+                    "type": "webelement"
+                },
+                { "name": "Postleitzahl",
+                    "type": "label"
+                },
+                {  "name": "Stockwerk",
+                    "type": "label"
+                },
+                { "name": "Wohnort",
+                    "type": "label"
+                },
+                { "name": "Zusatzangaben",
+                    "type": "label"
+                },
+                { "name": "Ortsteil",
+                    "type": "label"
+                },
+                { "name": "Wohnungsinhaber",
+                    "type": "label"
+                },
+                {  "name": "Strasse",
+                    "type": "label"
+                },
+                {  "name": "HausNr",
+                    "type": "label"
+                },
+                { "name": "HausNrBuchstabe",
+                    "type": "label"
+                },
+                { "name": "HausNrTeilnummer",
+                    "type": "label"
+                },
+                { "name": "Wohnstaat",
+                    "type": "label"
+                }
+            ],
+            "methods": [ ]
+        }
+    ]
+}

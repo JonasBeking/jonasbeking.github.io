@@ -1,0 +1,95 @@
+<root>
+    <blocks>
+        <block id="script">import spock.lang.*
+import kiwicon.shop.resources.*
+import groovy.util.logging.Slf4j
+@Slf4j
+@Stepwise
+class CLASSNAME extends Specification {
+
+    @Shared b //browser
+    @Shared datamap=new Properties()
+
+
+    // #################### SETUP ##################################
+
+    //##################### CLEANUP ###############################
+
+    //##################### STEPS ########################
+
+
+    //##################### END ########################
+}
+        </block>
+        <block id="setupspec">
+    def setupSpec(){
+        datamap= Utils.ImportDataMap()
+        println datamap
+        b= Utils.getBrowser("#Browser: firefox, chrome, edge#")
+    }
+        </block>
+        <block id="cleanupspec">
+    def cleanupSpec(){
+        b.quit()
+        b=null
+        datamap=null        
+    }
+        </block>
+        <block id="step">
+    def "Step 1"(){ 
+       given: "#Description#"
+        
+       expect: "#Description#"
+           
+   }
+        </block>
+    </blocks>
+    <commands>
+        <command id="given">given: '#Description#'</command>
+        <command id="when">when: '#Description#'</command>
+        <command id="then">then: '#Description#'</command>
+        <command id="expect">expect: '#Description#'</command>
+        <command id="where">
+            where:
+                a  [5, 3]
+                b  [1, 9]
+                c  [5, 9]
+        </command>
+
+        <command id="setup">
+            setup:{
+
+            }
+        </command>
+        <command id="cleanup">
+            cleanup:{
+
+            }
+        </command>
+        <command id="assert">assert #left expression#==#right expression#:#optional message#</command>
+        <command id="if">
+            if(#expression#){
+                /*code*
+            }
+        </command>
+        <command id="ifelse">
+            if(#expression#){
+                /*code*/\n\n
+            }
+            else{
+                /*code*/
+            }
+        </command>
+        <command id="ifelseif">
+            if(#expression#){
+                /*code*/
+            }
+            else if(#expression#){
+                /*code*/
+            }
+            else{
+                /*code*/
+            }
+        </command>
+    </commands>
+</root>
